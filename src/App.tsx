@@ -3,6 +3,7 @@ import logo from "./assets/images/logo.svg";
 import robots from "./mockdata/robots.json";
 import Robot from "./components/Robot";
 import styles from "./App.module.css";
+import ShoppingCart from "./components/ShoppingCart";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <img src={logo} alt="logo" className={styles.appLogo}/>
         <h1>机器人在线购物平台</h1>
       </div>
+      <ShoppingCart />
       <div className={styles.robotList}>
         {robots.map((r) => (
           <Robot key={r.id} id={r.id} name={r.name} email={r.email} />
