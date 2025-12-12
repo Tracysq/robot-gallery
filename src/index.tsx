@@ -5,7 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 const defaultContextValue = {
-  username: "context 数据共享",
+  username: "数据test",
 };
 export const appContext = React.createContext(defaultContextValue);
 
@@ -15,7 +15,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <appContext.Provider value={defaultContextValue}>
-      <App username="props 数据传递" />
+      <App />
     </appContext.Provider>
   </React.StrictMode>
 );
